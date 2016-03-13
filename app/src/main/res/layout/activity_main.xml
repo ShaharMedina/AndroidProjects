@@ -12,5 +12,58 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/phraseLabel"
+        android:layout_marginTop="116dp"
+        android:textSize="30dp"
+        android:password="false"
+        android:text="@string/phraseLabel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:id="@+id/phraseText"
+        android:foreground="#fbfbfb"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phraseText"
+        android:id="@+id/button"
+        android:textSize="25dp"
+        android:layout_below="@+id/phraseText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:singleLine="true"
+        android:onClick="onReadTextClick"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:id="@+id/radioEnglish"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/phraseLabel"
+        android:layout_alignStart="@+id/phraseLabel"
+        android:layout_marginTop="58dp"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="French"
+        android:id="@+id/radioFrench"
+        android:layout_below="@+id/radioEnglish"
+        android:layout_alignLeft="@+id/radioEnglish"
+        android:layout_alignStart="@+id/radioEnglish"
+        android:checked="false" />
+    </RadioGroup>
+
 </RelativeLayout>

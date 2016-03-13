@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ex_3</string>
+    <string name="phraseLabel">Enter a phrase</string>
+    <string name="phraseText">Read Text</string>
 </resources>
